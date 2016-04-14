@@ -41,9 +41,7 @@ RUN	docker-php-ext-configure gd --enable-gd-native-ttf --with-jpeg-dir=/usr/lib/
 	&& docker-php-ext-install mbstring \
 	&& docker-php-ext-install mcrypt \
 	&& docker-php-ext-install pdo_pgsql \
-	#&& docker-php-ext-install mysql \
-	#&& docker-php-ext-install mysqli \
-	#&& docker-php-ext-install pdo_mysql \
+	&& docker-php-ext-install pdo_mysql \
 	&& docker-php-ext-install zip \
 	&& docker-php-ext-install bcmath
 
